@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ce2qhhiwucw2r"]
+
+[ext_resource type="Texture2D" uid="uid://go6b1a062l6m" path="res://icon.svg" id="1_sy5k4"]
+[ext_resource type="Texture2D" uid="uid://hlbukh3spjdk" path="res://tileythingy.png" id="2_j2q8x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bw5d"]
+size = Vector2(125, 124)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_112p8"]
+texture = ExtResource("2_j2q8x")
+
+[sub_resource type="TileSet" id="TileSet_etn4d"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_112p8")
+
+[node name="Node" type="Node" unique_id=929914360]
+
+[node name="player" type="CharacterBody2D" parent="." unique_id=5744587]
+
+[node name="Sprite2D" type="Sprite2D" parent="player" unique_id=945190606]
+texture = ExtResource("1_sy5k4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=944962290]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_1bw5d")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=315828558]
+tile_set = SubResource("TileSet_etn4d")
