@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b7jnd6h0lmk4f"]
+
+[ext_resource type="Texture2D" uid="uid://dk66u6kobp18d" path="res://asetts/sprites/ball.png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://gxhuh8nyrjgl" path="res://player.gd" id="1_ij6vw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i81ie"]
+
+[node name="player" type="CharacterBody2D" unique_id=1283382182]
+script = ExtResource("1_ij6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137197033]
+shape = SubResource("CircleShape2D_i81ie")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=267405167]
+scale = Vector2(2, 1.9999998)
+texture = ExtResource("1_f50pn")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=836390337]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1309037980]

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cr5i4fs00miqq"]
+
+[ext_resource type="Texture2D" uid="uid://bb3533vysly3j" path="res://asetts/sprites/floor.png" id="1_bb12l"]
+[ext_resource type="PackedScene" uid="uid://b7jnd6h0lmk4f" path="res://character_body_2d.tscn" id="2_qpjuv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qpjuv"]
+texture = ExtResource("1_bb12l")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_fbwmm"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_qpjuv")
+
+[node name="area" type="Node2D" unique_id=1632460212]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=840181310]
+tile_set = SubResource("TileSet_fbwmm")
+format = 2
+layer_0/tile_data = PackedInt32Array(655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0, 720916, 0, 0, 720917, 0, 0, 720918, 0, 0, 720919, 0, 0, 720920, 0, 0, 720921, 0, 0, 720922, 0, 0, 786458, 0, 0, 786459, 0, 0, 786460, 0, 0, 786461, 0, 0, 655393, 0, 0, 589857, 0, 0, 524321, 0, 0, 458786, 0, 0, 393250, 0, 0, 393251, 0, 0, 393252, 0, 0, 393253, 0, 0, 393254, 0, 0, 393255, 0, 0, 393256, 0, 0, 393257, 0, 0, 589841, 0, 0, 589856, 0, 0, 655392, 0, 0, 655391, 0, 0, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 262147, 0, 0, 327683, 0, 0, 393219, 0, 0, 458755, 0, 0, 524291, 0, 0, 589828, 0, 0, 655364, 0, 0, 720900, 0, 0, 786436, 0, 0, 720902, 0, 0, 196605, 0, 0, 131068, 0, 0, 65532, 0, 0, -4, 0, 0, -65540, 0, 0, -131076, 0, 0, -196612, 0, 0, -262149, 0, 0, -327685, 0, 0, -393221, 0, 0, -458757, 0, 0, -524293, 0, 0, -589829, 0, 0, -655365, 0, 0, -720901, 0, 0)
+
+[node name="player" parent="." unique_id=1283382182 instance=ExtResource("2_qpjuv")]
