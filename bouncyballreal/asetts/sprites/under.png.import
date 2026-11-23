@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jo3nvvhx7khx"
-path="res://.godot/imported/legEnd.png-d7a1f6cc65f26e001cb63097cec827ff.ctex"
+uid="uid://bstq8rbe4k1bu"
+path="res://.godot/imported/under.png-a27d059fa6380ee54cbe921ef6833803.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asetts/sprites/legEnd.png"
-dest_files=["res://.godot/imported/legEnd.png-d7a1f6cc65f26e001cb63097cec827ff.ctex"]
+source_file="res://asetts/sprites/under.png"
+dest_files=["res://.godot/imported/under.png-a27d059fa6380ee54cbe921ef6833803.ctex"]
 
 [params]
 
